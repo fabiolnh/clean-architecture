@@ -4,54 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4829816c-6f6f-4328-a9c6-eb8b2653f23d" name="Changes" comment="feat: add usecase directory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/api/order/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/api/order/presenters/OrderPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/db/order/model/OrderModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/update/.gitkeep" afterDir="false" />
+    <list default="true" id="4829816c-6f6f-4328-a9c6-eb8b2653f23d" name="Changes" comment="feat: edit app folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/inbound/rest/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/inbound/rest/dto/OrderRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/inbound/rest/dto/OrderResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/outbound/db/cassandra/CassandraDbOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/outbound/db/cassandra/CassandraOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/outbound/db/cassandra/SpringDataCassandraOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/outbound/db/mongo/MongoDbOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/outbound/db/mongo/MongoOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/adapters/outbound/db/mongo/SpringDataMongoOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/controller/OrderControllerPort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/controller/dto/OrderRequestPort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/controller/dto/OrderResponsePort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/domain/OrderPort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/dto/Order$OrderBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/dto/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/repository/OrderRepositoryPort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/application/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/usecase/order/find/interfaces/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/inbound/queue/rabbitmq/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/list/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/inbound/queue/sqsaws/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/save/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/inbound/rest/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/inbound/rest/dto/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/api/order/dto/OrderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/inbound/rest/dto/OrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/api/order/dto/OrderResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/outbound/db/cassandra/CassandraDbOrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/outbound/db/cassandra/CassandraOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/outbound/db/cassandra/SpringDataCassandraOrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/outbound/db/mongo/MongoDbOrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/outbound/db/mongo/MongoOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/adapters/outbound/db/mongo/SpringDataMongoOrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/application/controller/OrderControllerPort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/application/controller/dto/OrderRequestPort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/application/controller/dto/OrderResponsePort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/application/domain/OrderPort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/application/dto/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/application/repository/OrderRepositoryPort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/application/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/BeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/CassandraConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/MongoDBConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/db/order/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/db/order/model/OrderModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/db/order/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/db/order/repository/OrderRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/find/FindOrderUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/find/FindOrderUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/find/dtos/InputFindOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/find/dtos/InputFindOrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/usecase/order/find/interfaces/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/infrastructure/db/order/repository/OrderRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,11 +89,28 @@
       <option name="project" value="LOCAL" />
       <updated>1706296046131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: edit app folder">
+      <option name="closed" value="true" />
+      <created>1707508134860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707508134860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: edit app folder">
+      <option name="closed" value="true" />
+      <created>1707508172521</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707508172521</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add usecase directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add usecase directory" />
+    <MESSAGE value="feat: edit app folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: edit app folder" />
   </component>
 </project>

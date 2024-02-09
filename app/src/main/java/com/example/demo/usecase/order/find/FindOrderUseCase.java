@@ -6,8 +6,6 @@ import com.example.demo.usecase.order.find.dtos.OutputFindOrderDTO;
 import com.example.demo.infrastructure.db.order.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 
-import java.util.Optional;
-
 @RequiredArgsConstructor
 public class FindOrderUseCase {
 
