@@ -20,15 +20,16 @@
 
 # Branas
 
-- Difference from Hexagonal: Use Cases, Defined responsabilities, Who knows who.
+- Difference from Hexagonal: Use Cases, Defined responsabilities, Who knows who, ...
 1) **Entity**: Is the Domain Model. It abstracts the Indendenty Business Rules (that can be objects with methods and validations). They are not the same of ORM (you will have one object for ORM and one for Domain). Ex: CPF is valid? The name is valid? (Some external user needs this information? If no, it is Indendenty Business Rules)
 2) **Use Cases**: it is the orchestration of entities and external resources. Examples: Create an account, verify an account, order a track, accept the track, start the track, end the track. (Some external user needs this information? If yes, it is Use Case). 
 3) **Interface Adapter (Controllers, Gateways, Presenters)**: It is a Bridge between Use Case and External Resources.
 4) **Frameworks and Drivers**: low level, interaction with tecnology.
 
-- Who is outside knows who is inside. (attention to the arrow on the image)
-- Layer is not directory. It is only logic.
-- Relationship in Hexagonal Architecture to Clean:
-    * Controller = Main (Entry point), Framework/Drivers and Interface Adapter
-    * Service = Use Case and Entity (Only Entity if there are some validations)
-    * DAO = Framework/Drivers and Interface Adapter
+OBS:
+   - Who is outside knows who is inside. (attention to the arrow on the image)
+   - Layer is not directory. It is only logic.
+   - Relationship in Hexagonal Architecture to Clean:
+       * Controller = Main (Entry point), Framework/Drivers and Interface Adapter
+       * Service = Use Case and Entity (Only Entity if there are some validations)
+       * DAO = Framework/Drivers and Interface Adapter
