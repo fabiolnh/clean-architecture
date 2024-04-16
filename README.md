@@ -9,16 +9,13 @@
 
 ![](https://github.com/fabiolnh/clean-architecture/blob/main/assets/clean-arc-pic1.png?raw=true)
 
-- Each Use Case has a DTO for Input and a DTO for Output. Use Cases can variable in accord to the flux (that'ś why they are not a part of entities)
+- Each Use Case has a DTO for Input and a DTO for Output. (it has to be only one method named "execute" and some DTOs if necessary)
 - Presenters: Transformation Object (Similar to DTO Mapper)
-- Entities from Clean Architecture are different from DDD Entities
-- Entities In Clean Architecture: Business Rules Layer
+- Entities from Clean Architecture are different from DDD Entities. Entity in Clean Arc is the Business Rules Layer.
 - There is no explicit definition of how to create entities. We use some tactics from DDD (just a correlation).
 - Entities from Clean Architecture: Aggregates + Domain Services
 
 - OBS: If you use a manual validation, you have to think if you want your domain to be pure or not. Think in a balance. Take care to not pollute your code. Do not be purest. But avoid being very dependent on the framework. If you know what you are doing, no problem. If the lib is very consolidated in the market, I think there is no problem. (Ex: Lombok)
-
-# Branas
 
 - Difference from Hexagonal: Use Cases, Defined responsabilities, Who knows who, ...
 1) **Entity**: Is the Domain Model. It abstracts the Indendenty Business Rules (that can be objects with methods and validations). They are not the same of ORM (you will have one object for ORM and one for Domain). Ex: CPF is valid? The name is valid? (Some external user needs this information? If no, it is Indendenty Business Rules)
