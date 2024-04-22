@@ -1,14 +1,11 @@
 package com.example.demo.infrastructure.db.order.repository;
 
-import com.example.demo.domain.order.entity.Order;
-import com.example.demo.infrastructure.db.order.model.OrderModel;
+import com.example.demo.infrastructure.db.order.model.OrderEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
 
-public class OrderRepository implements com.example.demo.domain.order.repository.OrderRepository<OrderModel> {
+public interface OrderRepository extends JpaRepository<OrderEntity, UUID> {
 
-  public OrderModel findBy(String name) {
-    // Need to implement manually the ORM or use some framework
-    return new OrderModel(UUID.randomUUID(), "test");
-  }
+  OrderEntity findBy(String name);
 }

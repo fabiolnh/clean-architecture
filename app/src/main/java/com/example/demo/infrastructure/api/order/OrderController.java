@@ -2,10 +2,8 @@ package com.example.demo.infrastructure.api.order;
 
 import com.example.demo.infrastructure.api.order.dto.OrderRequest;
 import com.example.demo.infrastructure.api.order.dto.OrderResponse;
-import com.example.demo.infrastructure.api.order.presenters.OrderPresenter;
-import com.example.demo.usecase.order.find.FindOrderUseCase;
-import com.example.demo.usecase.order.find.dtos.InputFindOrderDTO;
-import com.example.demo.usecase.order.find.dtos.OutputFindOrderDTO;
+import com.example.demo.infrastructure.api.order.presenter.OrderApiPresenter;
+import com.example.demo.application.usecase.order.FindOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -15,18 +13,18 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/orders")
 public class OrderController {
 
-    private final FindOrderUseCase findOrderUseCase;
+    private final FindOrder findOrderUseCase;
 
     @Autowired
-    public OrderController(FindOrderUseCase findOrderUseCase) {
+    public OrderController(FindOrder findOrderUseCase) {
         this.findOrderUseCase = findOrderUseCase;
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<OrderResponse> findOrder(OrderRequest orderRequest) {
-        InputFindOrderDTO inputFindOrderDTO = OrderPresenter.toInputFindOrderDTO(orderRequest);
-        OutputFindOrderDTO outputFindOrderDTO = findOrderUseCase.execute(inputFindOrderDTO);
-        OrderResponse orderResponse = OrderPresenter.toOrderResponse(outputFindOrderDTO);
+        FindOrder.Input input = OrderApiPresenter.toInputFindOrderDTO(orderRequest);
+        FindOrder.Output output = findOrderUseCase.execute(input);
+        OrderResponse orderResponse = OrderApiPresenter.toOrderResponse(output);
         return ResponseEntity.ok(orderResponse);
     }
 
